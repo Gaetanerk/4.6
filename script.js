@@ -10,7 +10,7 @@ btnCheck.addEventListener("click", () => {
     (cand2.value || cand3.value || cand4.value) > 50 ||
     (cand1.value >= 12.5 &&
       cand1.value < 50 &&
-      (cand2.value > 50 || cand3.value > 50 || cand4.value > 50))
+      (cand2.value >= 50 || cand3.value >= 50 || cand4.value >= 50))
   ) {
     alert("Candidat 1 battu au 1er tour");
   } else if (cand1.value >= 50) {
